@@ -1,0 +1,15 @@
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_NL.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_PE.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_NS.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_NB.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_QC_1.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_QC_2.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_ON_1.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_ON_2.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_ON_3.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_MB.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_SK.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_AB.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_BC.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_YT.zip
+https://www150.statcan.gc.ca/pub/34-26-0001/2018001/zip/ODB_v3_NT.zip
