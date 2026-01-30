@@ -9,6 +9,7 @@ DATASET_ID="ca_statcan_open_database_of_buildings_2025-04-15"
 OUTPUT_GEOPACKAGE="${SCRATCH_FOLDER}/${DATASET_ID}/${DATASET_ID}.gpkg"
 OUTPUT_FLATGEOBUF="${SCRATCH_FOLDER}/${DATASET_ID}/${DATASET_ID}.fgb"
 
+# Merge all of the GeoPackages into one
 FIRST=true
 for FILE in ${SCRATCH_FOLDER}/${DATASET_ID}/ODB*.gpkg; do
     if [ "${FILE}" == "${OUTPUT_GEOPACKAGE}" ]; then
@@ -24,13 +25,14 @@ for FILE in ${SCRATCH_FOLDER}/${DATASET_ID}/ODB*.gpkg; do
     fi
 done
 
+# Create a FlatGeoBuf from the GeoPackage
 echo "Creating ${OUTPUT_FLATGEOBUF} from ${OUTPUT_GEOPACKAGE}"
 ogr2ogr -f FlatGeobuf \
     -progress \
     -t_srs EPSG:4326 \
     -nlt "MULTIPOLYGON2D" \
-    -lco "TITLE=Open Database of Buildings (ODB) - Statistics Canada / Base de données ouverte sur les bâtiments (BDOB) - Statistique Canada" \
-    -lco "DESCRIPTION=Harmonized building footprints and attributes across Canada, optimized for cloud-native GIS workflows. / Empreintes et attributs de bâtiments harmonisés à l'échelle du Canada, optimisés pour les flux de travail SIG infonuagiques" \
+    -lco "TITLE=Open Database of Buildings (ODB) from Statistics Canada for 2025-04-15 / Base de données ouverte sur les bâtiments (BDOB) de Statistique Canada pour le 2025-04-15" \
+    -lco "DESCRIPTION=Harmonized building footprints and attributes across Canada / Empreintes et attributs de bâtiments harmonisés à l'échelle du Canada" \
     "${OUTPUT_FLATGEOBUF}" \
     "${OUTPUT_GEOPACKAGE}"
 
